@@ -1,0 +1,26 @@
+{
+   "proyects":[
+      {
+         "name":"Proyecto #1",
+         "description":"Esto es una descripcion",
+         "image":"src/laruta.jpg",
+         "repo":"github.com/proyect1",
+         "tecnologias":[
+            "laravel",
+            "bootstrap",
+            "sass"
+         ]
+      },
+      {
+         "name":"Proyecto #2",
+         "description":"Esto es una descripcion",
+         "image":"src/laruta.jpg",
+         "repo":"github.com/proyect2",
+         "tecnologias":[
+            "react",
+            "node.js",
+            "sass"
+         ]
+      }
+   ]
+}
