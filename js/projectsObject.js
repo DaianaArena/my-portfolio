@@ -3,7 +3,7 @@ export const myProjects = {
       {
          "nombre":"Coffee Shop",
          "descripcion":"Landing page de una tienda de café",
-         "imagen":"../images/projects/coffee_pic.png",
+         "imagen":"images/projects/coffee_pic.png",
          "repo":"https://github.com/DaianaArena/coffee-shop",
          "live": "https://daianaarena.github.io/coffee-shop/",
          "tecnologias":[
