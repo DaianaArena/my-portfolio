@@ -15,7 +15,7 @@ export const myProjects = {
       {
          "nombre":"Price Component",
          "descripcion":"Componente realizado con flexbox para mostrar un precio",
-         "imagen":"../images/projects/price_pic.png",
+         "imagen":"images/projects/price_pic.png",
          "repo":"https://github.com/DaianaArena/Single-price-component",
          "live": "https://daianaarena.github.io/Single-price-component/",
          "tecnologias":[
@@ -26,7 +26,7 @@ export const myProjects = {
       {
          "nombre":"Testimonials",
          "descripcion":"Testimonials responsive grid challenge de front-end mentor.",
-         "imagen":"../images/projects/testimonials_pic.png",
+         "imagen":"images/projects/testimonials_pic.png",
          "repo":"https://github.com/DaianaArena/testimonials-grid",
          "live": "https://daianaarena.github.io/testimonials-grid/",
          "tecnologias":[
@@ -37,7 +37,7 @@ export const myProjects = {
       {
          "nombre":"Pokedex",
          "descripcion":"Pokedex app realizada con API.",
-         "imagen":"../images/projects/pokedex_pic.png",
+         "imagen":"images/projects/pokedex_pic.png",
          "repo":"https://github.com/DaianaArena/pokedex-v2",
          "live": "https://daianaarena.github.io/pokedex-v2/",
          "tecnologias":[
@@ -50,7 +50,7 @@ export const myProjects = {
       {
          "nombre":"Memoji",
          "descripcion":"Memo-test de Emojis con distintos niveles y modos de juego",
-         "imagen":"../images/projects/memoji_pic.png",
+         "imagen":"images/projects/memoji_pic.png",
          "repo":"https://github.com/DaianaArena/memoji-test",
          "live": "https://daianaarena.github.io/memoji-test/",
          "tecnologias":[
@@ -62,7 +62,7 @@ export const myProjects = {
       {
          "nombre":"React Simple Card",
          "descripcion":"Componente simple creado en React",
-         "imagen":"../images/projects/react_card_pic.png",
+         "imagen":"images/projects/react_card_pic.png",
          "repo":"https://github.com/DaianaArena/react-card",
          "live": "https://react-card-kabvhfcd0-daianaarena.vercel.app/",
          "tecnologias":[
@@ -74,7 +74,7 @@ export const myProjects = {
       {
          "nombre":"AirClone",
          "descripcion":"Clon de la web de AirBnB experiences.",
-         "imagen":"../images/projects/airbnb_clone_pic.png",
+         "imagen":"images/projects/airbnb_clone_pic.png",
          "repo":"https://github.com/DaianaArena/airbnb-experiences-clone",
          "live": "https://airbnb-experiences-clone-nu.vercel.app/",
          "tecnologias":[
@@ -86,7 +86,7 @@ export const myProjects = {
       {
          "nombre":"Travel Journal",
          "descripcion":"Responsive travel journal challenge de Scrimba.",
-         "imagen":"../images/projects/travel_journal_pic.png",
+         "imagen":"images/projects/travel_journal_pic.png",
          "repo":"https://github.com/DaianaArena/travel-journal",
          "live": "https://travel-journal-sigma.vercel.app/",
          "tecnologias":[
@@ -99,7 +99,7 @@ export const myProjects = {
       {
          "nombre":"Meme Generator",
          "descripcion":"Responsive meme generator web con API.",
-         "imagen":"../images/projects/meme_generator_pic.png",
+         "imagen":"images/projects/meme_generator_pic.png",
          "repo":"https://github.com/DaianaArena/meme-generator",
          "live": "Cooming soon",
          "tecnologias":[
