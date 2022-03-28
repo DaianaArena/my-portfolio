@@ -1,5 +1,5 @@
-{
-   "proyects":[
+export const myProjects = {
+   "proyects": [
       {
          "nombre":"Coffee Shop",
          "descripcion":"Landing page de una tienda de café",
@@ -108,6 +108,5 @@
             "HTML5"
          ]
       }
-
    ]
 }
