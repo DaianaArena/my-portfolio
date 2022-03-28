@@ -2,19 +2,27 @@ import {myProjects} from "./projectsObject.js";
 const proyectos_container = document.getElementById('proyectos_container');
 
 
-var mydata = myProjects
-console.log(mydata);
-//const fetchProjects= fetch("js\projects.json").then(res => { return res.json();}).then(json => console.log(json));
+var projects = myProjects
+const misProyectos = projects.proyects;
+
+misProyectos.forEach(proyecto => {
+    let proyectElement = document.createElement('div');
+    proyectElement.classList.add('proyecto');
+
+    //aca tengo que crear la estructura de cada card
+    let projectInnerHTML = `<div class="proyecto-info">esto es un proyecto</div>`;
+
+    proyectElement.innerHTML = projectInnerHTML;
+    proyectos_container.appendChild(proyectElement);
+});
+
+//console.log(projects); TODO EL OBJETO
+//console.log(projects.proyects.length); EL LARGO DE TODO EL OBJETO
+//console.log(projects.proyects[0].tecnologias.length); EL LARGO DEL ARRAY DE TECNOLOGIAS
 
 
-
-/*const createProjectCard = (proyectos) => {
-
-
-    const pokemontElement = document.createElement('div');
-    pokemontElement.classList.add('pokemon');
-
-    const pokeInnerHTML = `<div class="pokemon-info">
+//ejemplo de card 
+/*const projectInnerHTML = `<div class="proyecto-info">
         <div class="img-container"><img src="${pokemon.sprites.front_default}" alt="${pokemon.name}"></div>
         <div class="pokemon-main-data">
         <h3>
@@ -30,14 +38,4 @@ console.log(mydata);
             Weight: ${pokemon.weight}
         </p>
         </div>
-    </div>`;
-
-    pokemontElement.innerHTML = pokeInnerHTML;
-    poke_container.appendChild(pokemontElement);
-
-    //*SWITCH TIPO DE POKEMON
-    pokemontElement.classList.add(pokemon.types[0].type.name);
-
-}*/
-
-
+    </div>`;*/
