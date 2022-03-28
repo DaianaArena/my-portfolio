@@ -228,15 +228,165 @@ body {
     z-index: 99;
 }
 
+/* --------PROYECTS SECTION ----------- */
 .projects {
 
-   /* background-color: white;*/
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+#proyectos_container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+
+}
+
+.proyecto {
+    width: 175px;
+    font-size: 12px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
     position: relative;
     z-index: 99;
 }
 
+.proyecto-info img {
+    width: 100%;
+    border-radius: 9px;
+   filter: brightness(0.8) hue-rotate(350deg) saturate(3)  contrast(0.6) grayscale(1);
+
+}
+
+.proyecto-info-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 9px;
+}
+
+.proyecto-info-text h2{
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 99;
+    bottom: 30px;
+    text-align: center;
+    background-color: var(--orange);
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+}
+
+.proyecto-info-text p{
+    font-family: var(--font-sd);
+    color: white;
+
+    opacity: 0;
+    display: none;
+}
+
+.proyecto-tecnologias ul{
+  
+    opacity: 0;
+    display: none;
+}
+
+.proyecto-tecnologias ul li{
+   
+
+    opacity: 0;
+}
+
+.proyecto-links {
+    opacity: 0;
+}
+
+.proyecto-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+
+.proyecto:hover {
+    background-color: #1a1a1a54;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+.proyecto:hover .proyecto-info img{
+    filter: none;
+}
+.proyecto:hover .proyecto-info-text h2{
+    background-color: transparent;
+    color: var(--orange);
+    font-size: 12px;
+    text-transform: uppercase;
+    position: static;
+    text-align: left;
+    padding: 5px;
+}
+
+.proyecto:hover .proyecto-info-text p{
+    opacity: 1;
+    display: inline;
+    text-align: left;
+    padding: 5px;
+}
+
+.proyecto:hover .proyecto-tecnologias ul{
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    color: white;
+    font-family: var(--font-sd);
+    flex-wrap: wrap;
+
+}
+
+.proyecto:hover .proyecto-tecnologias ul li{
+    opacity: 1;
+    background-color: var(--orange);
+    border-radius:9px;
+    padding: 3px 5px;
+    margin: 1px 2px;
+}
+
+.proyecto:hover .proyecto-links {
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 9px;
+    margin-bottom: 3px;
+}
+
+
+
+
+
+
+
+/* --------CV SECTION ----------- */
 .my-cv {
     /*background-color: var(--bg-color);*/
     
@@ -407,3 +557,4 @@ form label span {
     right: -100px;
 
 }
+

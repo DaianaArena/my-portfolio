@@ -5,6 +5,7 @@ const proyectos_container = document.getElementById('proyectos_container');
 var projects = myProjects
 const misProyectos = projects.proyects;
 
+
 misProyectos.forEach(proyecto => {
     let proyectElement = document.createElement('div');
     proyectElement.classList.add('proyecto');
@@ -16,12 +17,12 @@ misProyectos.forEach(proyecto => {
     <div class="proyecto-info-text">
         <h2>${proyecto.nombre}</h2>
         <p>${proyecto.descripcion}</p>
-        <div class="proyecto-info-text-tecnologias">
+        <div class="proyecto-tecnologias">
             <ul>
                 ${proyecto.tecnologias.map(tecnologia => `<li>${tecnologia}</li>`).join('')}
             </ul>
         </div>
-        <div class="proyecto-info-text-links">
+        <div class="proyecto-links">
             <a href="${proyecto.repo}" target="_blank" rel="noopener noreferrer">Repo</a>
             <a href="${proyecto.live}" target="_blank" rel="noopener noreferrer">Live</a>
         </div>

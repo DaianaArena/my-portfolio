@@ -13,7 +13,7 @@ export const myProjects = {
          ]
       },
       {
-         "nombre":"Single Price Component",
+         "nombre":"Price Component",
          "descripcion":"Componente realizado con flexbox para mostrar un precio",
          "imagen":"../images/projects/price_pic.png",
          "repo":"https://github.com/DaianaArena/Single-price-component",
@@ -24,7 +24,7 @@ export const myProjects = {
          ]
       },
       {
-         "nombre":"Testimonials Section",
+         "nombre":"Testimonials",
          "descripcion":"Testimonials responsive grid challenge de front-end mentor.",
          "imagen":"../images/projects/testimonials_pic.png",
          "repo":"https://github.com/DaianaArena/testimonials-grid",
