@@ -23,8 +23,8 @@ misProyectos.forEach(proyecto => {
             </ul>
         </div>
         <div class="proyecto-links">
-            <a href="${proyecto.repo}" target="_blank" rel="noopener noreferrer">Repo</a>
-            <a href="${proyecto.live}" target="_blank" rel="noopener noreferrer">Live</a>
+            <a href="${proyecto.repo}" target="_blank" rel="noopener noreferrer">Github</a>
+            <a href="${proyecto.live}" target="_blank" rel="noopener noreferrer">Web</a>
         </div>
     </div>
     </div>`;
