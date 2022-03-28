@@ -9,33 +9,25 @@ misProyectos.forEach(proyecto => {
     let proyectElement = document.createElement('div');
     proyectElement.classList.add('proyecto');
 
-    //aca tengo que crear la estructura de cada card
-    let projectInnerHTML = `<div class="proyecto-info">esto es un proyecto</div>`;
+
+    let projectInnerHTML =`<div class="proyecto-info">
+
+    <img src="${proyecto.imagen}" alt="${proyecto.nombre}">
+    <div class="proyecto-info-text">
+        <h2>${proyecto.nombre}</h2>
+        <p>${proyecto.descripcion}</p>
+        <div class="proyecto-info-text-tecnologias">
+            <ul>
+                ${proyecto.tecnologias.map(tecnologia => `<li>${tecnologia}</li>`).join('')}
+            </ul>
+        </div>
+        <div class="proyecto-info-text-links">
+            <a href="${proyecto.repo}" target="_blank" rel="noopener noreferrer">Repo</a>
+            <a href="${proyecto.live}" target="_blank" rel="noopener noreferrer">Live</a>
+        </div>
+    </div>
+    </div>`;
 
     proyectElement.innerHTML = projectInnerHTML;
     proyectos_container.appendChild(proyectElement);
 });
-
-//console.log(projects); TODO EL OBJETO
-//console.log(projects.proyects.length); EL LARGO DE TODO EL OBJETO
-//console.log(projects.proyects[0].tecnologias.length); EL LARGO DEL ARRAY DE TECNOLOGIAS
-
-
-//ejemplo de card 
-/*const projectInnerHTML = `<div class="proyecto-info">
-        <div class="img-container"><img src="${pokemon.sprites.front_default}" alt="${pokemon.name}"></div>
-        <div class="pokemon-main-data">
-        <h3>
-            Nombre: ${pokemon.name}
-        </h3>
-        <p> Type: ${pokemon.types[0].type.name}</p>
-        </div>
-        <div class="pokemon-stats">
-        <p>
-            Height: ${pokemon.height}
-        </p>
-        <p>
-            Weight: ${pokemon.weight}
-        </p>
-        </div>
-    </div>`;*/
