@@ -935,11 +935,16 @@ form label span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 50px;
+    width: 100%;
 }
 
 .btn-cv-container a{
     padding: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
