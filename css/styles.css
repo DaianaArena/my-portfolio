@@ -369,13 +369,13 @@ body {
 }
 
 .proyecto-tecnologias ul{
-  
+
     opacity: 0;
     display: none;
 }
 
 .proyecto-tecnologias ul li{
-   
+
 
     opacity: 0;
 }
@@ -384,7 +384,7 @@ body {
     opacity: 0;
 }
 
-.proyecto-links a{
+.proyecto-links a, .proyecto-links span{
     color: white;
     font-size: 12px;
     text-transform: uppercase;
@@ -640,7 +640,6 @@ form label span {
     /*--------NAV SECTION--------*/
     .nav-bar {
 
-        position: sticky;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -735,11 +734,11 @@ form label span {
    /*---------HOME---------*/
    .home {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
  }
 
 .home-container {
- padding-top: 10%;
+ padding-top: 25%;
  width: 100%;
  height: 80%;
  display: flex;
@@ -780,11 +779,12 @@ form label span {
  /*--------- ABOUT---------*/
  .about-container {
    flex-direction: column-reverse;
+   padding-top: 10%;
 }
 
 .about-image{
     width: 40vw;
-    bottom: -10%;
+    bottom: 0%;
 }
 
 .about-info {
@@ -806,7 +806,7 @@ form label span {
 
 #proyectos_container {
     min-height: 90%;
-    padding-top: 10%;
+    padding-top: 15%;
     display: flex;
 
 }
@@ -909,6 +909,7 @@ form label span {
 
 .cv-container {
     flex-direction: column-reverse;
+    padding-top: 10%;
 }
 
 .cv-container img {
@@ -920,11 +921,12 @@ form label span {
 
 .cv-text {
 
-    text-align: center;
+    text-align: left;
     font-size: 2.5em;
-    flex-direction: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
+
 
 .btn-cv-container{
     display: flex;
@@ -946,6 +948,7 @@ form label span {
 .contactame form{
     width: 90%;
     height: 60vh;
+    padding-top: 20%;
 }
 
 .form-head {

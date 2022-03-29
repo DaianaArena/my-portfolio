@@ -101,7 +101,7 @@ export const myProjects = {
          "descripcion":"Responsive meme generator web con API.",
          "imagen":"images/projects/meme_generator_pic.png",
          "repo":"https://github.com/DaianaArena/meme-generator",
-         "live": "Cooming soon",
+         "live": null,
          "tecnologias":[
             "React",
             "CSS3",

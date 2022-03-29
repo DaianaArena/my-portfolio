@@ -6,7 +6,7 @@ var projects = myProjects
 const misProyectos = projects.proyects;
 
 
-misProyectos.forEach(proyecto => {
+misProyectos.slice().reverse().forEach(proyecto => { //dar vuelta el array para que se muestren primero los más recientes
     let proyectElement = document.createElement('div');
     proyectElement.classList.add('proyecto');
 
@@ -23,12 +23,30 @@ misProyectos.forEach(proyecto => {
             </ul>
         </div>
         <div class="proyecto-links">
-            <a href="${proyecto.repo}" target="_blank" rel="noopener noreferrer">Github</a>
-            <a href="${proyecto.live}" target="_blank" rel="noopener noreferrer">Web</a>
+        
         </div>
     </div>
     </div>`;
 
     proyectElement.innerHTML = projectInnerHTML;
     proyectos_container.appendChild(proyectElement);
+
+    let proyectoLinks = proyectElement.querySelector('.proyecto-links');
+    
+    let isLive = "";
+
+    if (proyecto.live != null) {
+
+        isLive = `
+        <a href="${proyecto.repo}" target="_blank" rel="noopener noreferrer">Github</a>
+        <a href="${proyecto.live}" target="_blank" rel="noopener noreferrer">Web</a>`;
+        proyectoLinks.innerHTML = isLive;
+    } else {
+        isLive = `
+        <a href="${proyecto.repo}" target="_blank" rel="noopener noreferrer">Github</a>
+        <span>-EN DESARROLLO-</span>`;
+        proyectoLinks.innerHTML = isLive;
+    }
 });
+
+

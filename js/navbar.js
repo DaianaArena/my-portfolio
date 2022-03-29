@@ -20,8 +20,32 @@ const navSlide = () => {
         //animate burger
         burguer.classList.toggle('burguer-active');
 
+
+
+
     });
 
+
+    //cerrar cuando se hace click en un link
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.forEach((link, index) => {
+
+                    link.style.animation = '';
+
+            });
+        burguer.classList.remove('burguer-active');
+        nav.classList.remove('nav-active');
+        });
+    });
+
+
+
+
+    /*navLinks.addEventListener('click', () => {
+        
+        
+    });*/
 
 }
 navSlide();
