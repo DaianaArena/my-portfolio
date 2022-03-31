@@ -1011,6 +1011,16 @@ form label span {
     font-size: 14px;
 }
 }
+/*-------------ERROR DE WAVE------------*/
+@media (max-width: 398px) {
+.custom-shape-divider-bottom-1642427342.waveDelMal{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+}
+
+
 /*-------------ERROR BREAKPOINT------------*/
 @media (max-width: 374px) {
     header, .home, .about, .projects, .my-cv, .contact {
