@@ -97,6 +97,19 @@ export const myProjects = {
          ]
       },
       {
+         "nombre":"Ollivander's Store",
+         "descripcion":"Responsive ecommerce con API.",
+         "imagen":"images/projects/ollivanders_pic.png",
+         "repo":"https://github.com/DaianaArena/ollivanders-shopping-cart",
+         "live": "https://daianaarena.github.io/ollivanders-shopping-cart/",
+         "tecnologias":[
+            "Javascript",
+            "API",
+            "CSS3",
+            "HTML5"
+         ]
+      },
+      {
          "nombre":"Meme Generator",
          "descripcion":"Responsive meme generator web con API.",
          "imagen":"images/projects/meme_generator_pic.png",
